@@ -1,28 +1,28 @@
 # grunt-init-weixin-jssdk
 
-TODO: This is a grunt-init template for web project base weixin JS SDK
-
-## Installation
-
-```
-$ 
-```
+This is a grunt-init template for web project base weixin JS SDK
 
 ## Usage
 
-TODO: Write usage instructions
+```
+$ git clone https://github.com/hxshandle/grunt-init-weixin-jssdk.git ~/.grunt-init/weixinjssdk
+$ cd PATH_TO_YOUR_PROJECT_ROOT
+$ grunt-init weixinjssdk
+```
 
-## Contributing
+## Contain packages
 
-1. Fork it!
-2. Create your feature branch: `git checkout -b my-new-feature`
-3. Commit your changes: `git commit -am 'Add some feature'`
-4. Push to the branch: `git push origin my-new-feature`
-5. Submit a pull request :D
+1. jQuery -> 
+| name | version
+-------|--------
+jquery | ~2.1.3
+modernizr | ~2.8.0
+lodash | ~3.1.0
+
 
 ## History
 
-TODO: Write history
+ * 2015-02-10   v0.1.0   Work in progress, not yet officially released.
 
 ## Credits
 
@@ -30,4 +30,4 @@ TODO: Write credits
 
 ## License
 
-TODO: Write license
+MIT
