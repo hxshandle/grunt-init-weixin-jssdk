@@ -12,7 +12,7 @@ $ grunt-init weixinjssdk
 
 ## Contain packages
 
-1. jQuery -> 
+
 | name | version
 -------|--------
 jquery | ~2.1.3
