@@ -10,6 +10,12 @@ $ cd PATH_TO_YOUR_PROJECT_ROOT
 $ grunt-init weixinjssdk
 ```
 
+During your developing phase just run the __gulp__ command all the js/css/jade file under __src__ folder will complied automatically and copy to public folder.
+
+> Note each file start with **"_"** underscore will not compiled, it will processed as a sub-file of others.
+
+
+
 ## Contain packages
 
 

@@ -44,8 +44,11 @@ exports.template = function(grunt, init, done) {
         'grunt-contrib-uglify': '~0.4.0',
         'grunt-contrib-watch': '~0.4.0',
         'grunt-contrib-clean': '~0.4.0',
+        'grunt-contrib-copy': '~0.7.0',
         'grunt-bower-task': '~0.4.0',
-        'grunt-bower-concat': '~0.4.0'
+        'grunt-bower-concat': '~0.4.0',
+        "gulp": "~3.8.10",
+        "gulp-ruby-sass": "~0.7.1",
       },
     });
   });

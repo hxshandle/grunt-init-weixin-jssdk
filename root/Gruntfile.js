@@ -17,7 +17,7 @@ module.exports = function(grunt) {
       },
       my_target:{
         files:{
-          'dist/bower.min.js': ['dist/_bower.js']
+          'public/js/vendor/bower.min.js': ['dist/_bower.js']
         }
       }
     },
@@ -51,12 +51,21 @@ module.exports = function(grunt) {
           relative: false
         }
       }
+    },
+    copy:{
+      main:{
+        files:[
+          // copy borwer css
+          {expand: true, src: ['dist/_bower.css'], dest: 'public/css/bower.css'},
+        ]
+      }
     }
   });
 
   // These plugins provide necessary tasks.
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-concat');
+  grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-watch');

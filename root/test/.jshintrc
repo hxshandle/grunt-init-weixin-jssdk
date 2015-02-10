@@ -13,6 +13,7 @@
   "browser": true,
   "globalstrict":true,
   "predef": [
+    "$",
     "jQuery",
     "QUnit",
     "module",
