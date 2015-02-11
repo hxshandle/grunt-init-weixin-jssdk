@@ -41,11 +41,13 @@ exports.template = function(grunt, init, done) {
       devDependencies: {
         'grunt-contrib-jshint': '~0.11.0',
         'grunt-contrib-concat': '~0.5.0',
+        'grunt-contrib-jade ':'~0.14.0',
         'grunt-contrib-uglify': '~0.4.0',
         'grunt-contrib-watch': '~0.4.0',
         'grunt-contrib-clean': '~0.4.0',
         'grunt-contrib-copy': '~0.7.0',
         'grunt-bower-task': '~0.4.0',
+        "gulp-ruby-sass": "~0.7.1",
         'grunt-bower-concat': '~0.4.0',
         "gulp": "~3.8.10",
         "gulp-ruby-sass": "~0.7.1",

@@ -59,12 +59,39 @@ module.exports = function(grunt) {
           {expand: true, src: ['dist/_bower.css'], dest: 'public/css/bower.css'},
         ]
       }
+    },
+    jade: {
+      compile: {
+        options: {
+          pretty:true
+        },
+        files: [{
+          expand: true,
+          cwd:"src/jade",
+          src:"**/[^_]*.jade",
+          dest:"public",
+          ext:".html"
+        }]
+      }
+    },
+    sass: {
+      dist: {
+        files: [{
+          expand: true,
+          cwd: 'src/scss',
+          src: ['**/[^_]*.scss'],
+          dest: 'public/css',
+          ext: '.css'
+        }]
+      }
     }
   });
 
   // These plugins provide necessary tasks.
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-concat');
+  grunt.loadNpmTasks('grunt-contrib-jade');
+  grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-jshint');
@@ -75,6 +102,6 @@ module.exports = function(grunt) {
 
   // Default task.
   //grunt.registerTask('default', ['jshint', 'clean', 'concat', 'uglify']);
-  grunt.registerTask('default', ['clean','bower','bower_concat','jshint' , 'uglify']);
+  grunt.registerTask('default', ['clean','bower','bower_concat','jshint' , 'uglify','jade','sass']);
 
 };
