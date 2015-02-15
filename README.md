@@ -15,6 +15,12 @@ During your developing phase just run the __gulp__ command all the js/css/jade f
 > Note each file start with **"_"** underscore will not compiled, it will processed as a sub-file of others.
 
 
+If you want to run the static server for your web app just type the following under your project root. The server will serv at port **3001**
+
+```
+node server.js
+```
+
 
 ## Contain packages
 
@@ -27,7 +33,7 @@ lodash | ~3.1.0
 
 
 ## History
-
+ * 2015-02-15   v0.1.1   Include node-static server to template
  * 2015-02-10   v0.1.0   Work in progress, not yet officially released.
 
 ## Credits

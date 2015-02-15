@@ -34,10 +34,16 @@ exports.template = function(grunt, init, done) {
     // Generate package.json file, used by npm and grunt.
     init.writePackageJSON('package.json', {
       name: props.name,
-      version: '0.0.0-ignored',
+      version: '0.1.1',
       npm_test: 'grunt',
+      scripts:{
+        "start": "node server.js"
+      },
       // TODO: pull from grunt's package.json
       node_version: '>= 0.8.0',
+      dependencies: {
+          "node-static": "^0.7.6"
+      },
       devDependencies: {
         'grunt-contrib-jshint': '~0.11.0',
         'grunt-contrib-concat': '~0.5.0',
